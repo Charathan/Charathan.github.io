@@ -32,9 +32,11 @@
 
 @media only screen and (min-width:970px){
     :root {
-        --main-width: 970px;
-
         --header-height: 70px;
+
+        --main-width: 970px;
+        --main-img-width: 970px;
+        --main-img-height: 600px;
     }
 }
 
@@ -228,6 +230,10 @@ footer li {
         display: initial;
         font-size: var(--main-font-size);
         float: right !important;
+    }
+
+    main img {
+        padding: var(--padding);
     }
 
 }
