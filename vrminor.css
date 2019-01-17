@@ -54,10 +54,22 @@ a {
 .row {
     width: 100%;
     padding: 5px 0;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .row > .full, .row > .half, .row > .third {
-    width: 100%;
+    flex-basis: 100%;
+    min-height: 150px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .first {
+        order: 1;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -66,22 +78,31 @@ a {
         margin: 0 auto;
     }
 
+    .row {
+        flex-direction: row;
+        padding: 15px 0;
+    }
+
     .row > .full {
-        width: 100%;
+        flex-basis: 100%;
     }
     
     .row > .half {
-        width: 50%;
-        float: left;
+        flex-basis: 50%;
     }
 
     .row > .third {
-        width: 33%;
-        float: left;
+        flex-basis: 33%;
     }
 } 
 
 #substance, #unity, #modelleren {
     font-size: 2rem;
     color: #D50000;
+}
+
+img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
