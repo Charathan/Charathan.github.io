@@ -116,3 +116,9 @@ img {
     color: #D50000;
     padding: 5px 0;
 }
+
+video {
+    object-fit: cover;
+    width: 100%;
+    padding: 1px;
+}
