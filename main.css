@@ -1,0 +1,22 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #262b44;
+}
+
+.avatar
+{
+    width: 480px;
+    max-width: 80%;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
